@@ -1,3 +1,0 @@
-//Yana
-
-class Pathology{};

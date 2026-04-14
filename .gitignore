@@ -39,3 +39,12 @@
 
 # debug information files
 *.dwo
+
+
+.vs/
+out/
+build/
+bin/
+obj/
+*.user
+*.sln.dotsettings.user

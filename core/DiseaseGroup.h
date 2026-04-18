@@ -9,7 +9,7 @@ public:
 	AllergyGroup(float reactionIntensity, std::string id, std::string name, float severity, float growthRate, std::vector <DiseaseStage> stages) 
 		: reactionIntensity(reactionIntensity), Disease(id, name, severity, growthRate, stages) {};
 
-	void applyStages(std::vector<Parameter>params) override;
+	void applyStages(std::vector<Parameter>& params) override;
 };
 
 class RespiratoryGroup : public Disease {

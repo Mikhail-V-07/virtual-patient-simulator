@@ -21,7 +21,7 @@ public:
 
 	void growSeverity();
 
-	virtual void applyStages(std::vector<Parameter>params);
+	virtual void applyStages(std::vector<Parameter>& params);
 
 	virtual void step(std::vector<Parameter>& params);
 

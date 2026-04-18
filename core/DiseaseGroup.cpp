@@ -2,16 +2,16 @@
 
 using namespace std;
 
-void AllergyGroup::applyStages(std::vector<Parameter>params) {
+void AllergyGroup::applyStages(std::vector<Parameter>& params) {
 	for (DiseaseStage& stage : stages) {
 		if (stage.triggered) continue;
 		if (severity >= stage.threshold) {
 			stage.triggered = true;
 
 			for (DiseaseEffect& effect : stage.effects) {
-				for (Parameter* param : params) {
-					if (param->getId() == effect.paramId) {
-						param->update(effect.delta * reactionIntensity);//чем выше тяжесть, тем более непредсказуемо скачут параметры
+				for (auto& param : params) {
+					if (param.getId() == effect.paramId) {
+						param.update(effect.delta * reactionIntensity);//чем выше тяжесть, тем более непредсказуемо скачут параметры
 					}
 				}
 			}

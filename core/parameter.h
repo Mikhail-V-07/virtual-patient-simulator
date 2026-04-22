@@ -9,7 +9,7 @@ private:
 	double minV, maxV;
 	double current;
 	std::string normal;
-	double drift = 0.0f;
+	double drift = 0.0;
 public: 
 	Parameter(std::string id, std::string name, float minV, float maxV, float current, float normal) 
 		:id(id), name(name), normal(normal), current(normal), minV(minV), maxV(maxV) {}; 

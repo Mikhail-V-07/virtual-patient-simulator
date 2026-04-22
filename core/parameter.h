@@ -6,10 +6,10 @@ class Parameter {
 private:
 	std::string id;
 	std::string name;
-	float minV, maxV;
-	float current;
-	float normal;
-	float drift = 0.0f;
+	double minV, maxV;
+	double current;
+	std::string normal;
+	double drift = 0.0f;
 public: 
 	Parameter(std::string id, std::string name, float minV, float maxV, float current, float normal) 
 		:id(id), name(name), normal(normal), current(normal), minV(minV), maxV(maxV) {}; 

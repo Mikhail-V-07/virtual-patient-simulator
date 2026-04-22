@@ -4,7 +4,7 @@
 #include <string> 
 class Parameter {
 private:
-	std::string id;
+	int id;
 	std::string name;
 	double minV, maxV;
 	double current;
